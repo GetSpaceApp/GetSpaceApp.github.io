@@ -4,419 +4,438 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPACE — Find Your Tribe. Build Together.</title>
+    <title>HerRise — Stories of Rural Women Artisans & Direct Marketplace</title>
     <meta name="description"
-        content="SPACE connects people on the same journey. Build habits solo, with your partner, or with your crew. Join real communities, find your tribe nearby.">
+        content="Subscribe to the HerRise newsletter for authentic stories of rural Indian women artisans. Read the story, then shop their craft directly from our marketplace.">
     <meta name="keywords"
-        content="habit tracker, crew habits, find your tribe, habit community, group habits, couple habits, SPACE app">
+        content="HerRise, newsletter, journalism, rural women artisans, direct marketplace, Indian crafts, women empowerment, student journalists">
     <meta name="author" content="Jakkula Shiva Kumar">
-    <meta name="theme-color" content="#02040A">
+    <meta name="theme-color" content="#ffffff">
 
-    <meta property="og:title" content="SPACE — Find Your Tribe. Build Together.">
+    <meta property="og:title" content="HerRise — Stories of Rural Women Artisans">
     <meta property="og:description"
-        content="The habit app that connects like-minded people. Solo, couple, or crew — find your aura, build together.">
+        content="We publish grassroots journalism uncovering the untold stories of rural women. Read their weekly stories, and purchase their crafts directly.">
     <meta property="og:type" content="website">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <!-- ========== NAVBAR ========== -->
-    <nav id="nav">
-        <a href="#" class="nav-logo">SPACE</a>
-        <div class="nav-pill liquid-glass">
-            <div class="nav-links">
-                <a href="#showcase">About</a>
-                <a href="#features">Features</a>
-                <a href="#modes">Modes</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#faq">FAQ</a>
-            </div>
-            <a href="#subscribe-form" class="nav-cta">
-                Subscribe
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <line x1="7" y1="17" x2="17" y2="7" />
-                    <polyline points="7 7 17 7 17 17" />
+    <nav id="nav" class="hr-nav">
+        <a href="#" class="hr-nav-logo">
+            <span class="hr-logo-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 21C12 21 3 14.5 3 8.5C3 5.42 5.42 3 8.5 3C10.24 3 11.91 3.81 13 5.09C14.09 3.81 15.76 3 17.5 3C20.58 3 23 5.42 23 8.5C23 14.5 12 21 12 21Z"
+                        fill="#00C950" stroke="none" />
                 </svg>
-            </a>
+            </span>
+            <span class="hr-logo-text">HerRise</span>
+        </a>
+        <div class="hr-nav-links">
+            <a href="#impact">Our Mission</a>
+            <a href="#pipeline">How We Report</a>
+            <a href="#microbrands">Latest Editions</a>
+            <a href="#legacy">The Gallery</a>
+        </div>
+        <div class="hr-nav-actions">
+            <a href="#subscribe-form" class="hr-btn-outline">Shop Marketplace</a>
+            <a href="#subscribe-form" class="hr-btn-solid">Subscribe Free</a>
         </div>
         <button class="hamburger" id="hamburger" aria-label="Menu">
             <span></span><span></span><span></span>
         </button>
     </nav>
 
+    <!-- Backdrop (closes drawer when clicked) -->
+    <div class="menu-backdrop" id="menu-backdrop"></div>
+
     <!-- ========== MOBILE MENU ========== -->
     <div class="mobile-menu" id="mobile-menu">
-        <a href="#showcase">About</a>
-        <a href="#features">Features</a>
-        <a href="#modes">Modes</a>
-        <a href="#pricing">Pricing</a>
+        <!-- Drawer Header -->
+        <div class="mobile-menu-header">
+            <a href="#" class="mobile-menu-logo">HerRise</a>
+            <button class="mobile-menu-close-btn" id="mobile-menu-close" aria-label="Close menu">✕</button>
+        </div>
+        <!-- Nav Links -->
+        <a href="#impact">Our Mission</a>
+        <a href="#pipeline">How We Report</a>
+        <a href="#microbrands">Latest Editions</a>
+        <a href="#legacy">The Gallery</a>
         <a href="#faq">FAQ</a>
         <a href="terms.html">Legal</a>
-        <a href="#subscribe-form">Subscribe →</a>
+        <!-- CTAs pinned to bottom -->
+        <div class="mobile-menu-cta">
+            <a href="#subscribe-form" class="mobile-cta-secondary">Shop Marketplace</a>
+            <a href="#subscribe-form" class="mobile-cta-primary">Subscribe Free</a>
+        </div>
     </div>
 
     <main>
 
         <!-- ========== HERO ========== -->
-        <section class="hero" id="hero">
-            <div class="orb orb-1"></div>
-            <div class="orb orb-2"></div>
-            <div class="orb orb-3"></div>
-            <div class="hero-gradient-overlay"></div>
-            <div class="hero-top-fade"></div>
-
-            <div class="hero-badge liquid-glass">
-                <span class="dot"></span>
-                Early Access: Up to 1 Year Free
+        <section class="hr-hero" id="hero">
+            <div class="hr-hero-bg">
+                <img src="screenshots/hero-bg.png" alt="Rural Indian Community" class="hr-hero-photo">
+                <div class="hr-hero-overlay"></div>
             </div>
 
-            <div class="hero-title">
-                <span class="brand-text">SPACE</span>
-            </div>
+            <div class="hr-hero-content">
+                <p class="hr-hero-subtitle">The Premier Newsletter Documenting Rural Indian Women Artisans.
+                </p>
+                <h1 class="hr-hero-headline">Her<span class="hr-headline-accent">Rise</span></h1>
+                <p class="hr-hero-desc">
+                    We publish grassroots journalism uncovering the untold stories of everyday rural women. Read our
+                    weekly publications, and instantly purchase their crafts directly through our marketplace.
+                </p>
 
-            <p class="hero-tagline">Find your tribe. Build together.</p>
-
-            <p class="hero-desc">
-                SPACE connects people who share the same journey. Build habits solo, with your partner, or with your
-                crew — join real communities, share daily proof, and find your aura nearby.
-            </p>
-
-            <div class="hero-actions">
-                <a href="#subscribe-form" class="btn btn-primary liquid-glass-strong">
-                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                <div class="hr-search-bar">
+                    <svg class="hr-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
                     </svg>
-                    Subscribe for Early Access
-                </a>
-                <a href="#showcase" class="btn btn-outline">See How It Works</a>
+                    <input type="email" placeholder="Enter your email to read the stories..." class="hr-search-input"
+                        id="hero-email">
+                    <button class="hr-search-btn">Subscribe Free</button>
+                </div>
+
+                <div class="hr-popular">
+                    <span class="hr-popular-label">Explore Editions:</span>
+                    <a href="#" class="hr-tag">Handloom</a>
+                    <span class="hr-dot-sep">·</span>
+                    <a href="#" class="hr-tag">Handcrafted Pottery</a>
+                    <span class="hr-dot-sep">·</span>
+                    <a href="#" class="hr-tag">Organic Spices</a>
+                    <span class="hr-dot-sep">·</span>
+                    <a href="#" class="hr-tag">Heritage Jewelry</a>
+                </div>
             </div>
 
-            <div class="hero-note"
-                style="margin-top:-10px; margin-bottom:60px; max-width:400px; margin-left:auto; margin-right:auto;">
-                <span style="color:var(--gold); font-weight:600;">Limited Offer:</span> Subscribe to get up to a 1-year
-                free
-                premium membership trial (limited to first 2k early registers!)
-            </div>
-
-            <div class="hero-stats liquid-glass">
-                <div class="hero-stat">
-                    <div class="hero-stat-num">3</div>
-                    <div class="hero-stat-label">Modes</div>
+            <div class="hr-badges">
+                <div class="hr-badge-card">
+                    <div class="hr-badge-icon">📰</div>
+                    <div class="hr-badge-text">
+                        <span class="hr-badge-title">Grassroots Journalism</span>
+                        <span class="hr-badge-sub">Authentic stories documented by local college youth</span>
+                    </div>
                 </div>
-                <div class="hero-stat">
-                    <div class="hero-stat-num">∞</div>
-                    <div class="hero-stat-label">Habits</div>
+                <div class="hr-badge-card">
+                    <div class="hr-badge-icon">🛒</div>
+                    <div class="hr-badge-text">
+                        <span class="hr-badge-title">Direct Marketplace</span>
+                        <span class="hr-badge-sub">Buy the exact crafts featured in our articles</span>
+                    </div>
                 </div>
-                <div class="hero-stat">
-                    <div class="hero-stat-num">📍</div>
-                    <div class="hero-stat-label">Discover</div>
+                <div class="hr-badge-card">
+                    <div class="hr-badge-icon">🇮🇳</div>
+                    <div class="hr-badge-text">
+                        <span class="hr-badge-title">Aatmanirbhar Ethos</span>
+                        <span class="hr-badge-sub">Backed by India's top female writers and leaders</span>
+                    </div>
                 </div>
-                <div class="hero-stat">
-                    <div class="hero-stat-num">Free</div>
-                    <div class="hero-stat-label">Forever</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========== PHONE SHOWCASE ========== -->
-        <div class="showcase">
-            <div class="showcase-wrap">
-                <div class="float-card fc-left-1 liquid-glass">
-                    <div class="fc-label">Combined Streak</div>
-                    <div class="fc-value">🔥 <span class="highlight-green">34 Days</span></div>
-                </div>
-                <div class="float-card fc-right-1 liquid-glass">
-                    <div class="fc-label">Your Crew</div>
-                    <div class="fc-value highlight-pink">👥 3 habits synced</div>
-                </div>
-                <div class="float-card fc-left-2 liquid-glass">
-                    <div class="fc-label">Nearby Spaces</div>
-                    <div class="fc-value">📍 <span class="highlight-green">8 groups</span></div>
-                </div>
-
-                <div class="phone-3d">
-                    <div class="notch"></div>
-                    <img src="screenshots/hero-phone.png" alt="SPACE App" class="phone-screenshot"
-                        onload="this.style.display='block'; this.nextElementSibling.style.display='none';"
-                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="phone-screen" style="display:none;">
-                        <div
-                            style="font-family:'Space Mono',monospace;font-size:16px;font-weight:700;text-align:center;padding-top:20px;background:linear-gradient(120deg,#fff,#8B5CF6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
-                            SPACE</div>
-                        <div
-                            style="display:flex;align-items:center;gap:10px;background:rgba(139,92,246,0.12);border-radius:14px;padding:16px;margin-top:20px;">
-                            <span style="font-size:24px;">🔥</span>
-                            <div style="flex:1;">
-                                <div style="font-size:9px;color:rgba(255,255,255,0.3);letter-spacing:0.06em;">YOUR
-                                    STREAK</div>
-                                <div style="font-size:20px;font-weight:700;">21 Days</div>
-                            </div>
-                        </div>
+                <div class="hr-badge-card">
+                    <div class="hr-badge-icon">📈</div>
+                    <div class="hr-badge-text">
+                        <span class="hr-badge-title">100% to the Artisan</span>
+                        <span class="hr-badge-sub">No platform cuts on any marketplace purchases</span>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- ========== MARQUEE ========== -->
         <div class="marquee-section">
             <div class="marquee-track">
-                <div class="marquee-item liquid-glass"><span class="emoji">🔥</span> Streak-powered accountability</div>
-                <div class="marquee-item liquid-glass"><span class="emoji">👥</span> Find your crew</div>
-                <div class="marquee-item liquid-glass"><span class="emoji">💑</span> Built for couples</div>
-                <div class="marquee-item liquid-glass"><span class="emoji">📍</span> Discover nearby tribes</div>
-                <div class="marquee-item liquid-glass"><span class="emoji">📸</span> Daily habit snaps</div>
-                <div class="marquee-item liquid-glass"><span class="emoji">🧘</span> Solo mode always free</div>
-                <div class="marquee-item liquid-glass"><span class="emoji">🏆</span> Shared challenges</div>
-                <div class="marquee-item liquid-glass"><span class="emoji">👊</span> Nudge your people</div>
-                <div class="marquee-item liquid-glass"><span class="emoji">🌍</span> Join real communities</div>
-                <div class="marquee-item liquid-glass"><span class="emoji">⚡</span> Find your aura</div>
+                <div class="marquee-item"><span class="emoji">📰</span> Weekly Newsletter</div>
+                <div class="marquee-item"><span class="emoji">🛒</span> Direct Marketplace</div>
+                <div class="marquee-item"><span class="emoji">🗞️</span> Grassroots Journalism</div>
+                <div class="marquee-item"><span class="emoji">🌿</span> Authentic Voices</div>
+                <div class="marquee-item"><span class="emoji">🎓</span> Student-led Reporting</div>
+                <div class="marquee-item"><span class="emoji">🤝</span> Zero Middlemen</div>
+                <div class="marquee-item"><span class="emoji">🧵</span> Handloom Stories</div>
+                <div class="marquee-item"><span class="emoji">🏺</span> Pottery Legacies</div>
+                <div class="marquee-item"><span class="emoji">💪</span> Women Empowerment</div>
+                <div class="marquee-item"><span class="emoji">🇮🇳</span> Aatmanirbhar Bharat</div>
             </div>
         </div>
 
-        <!-- ========== MISSION STATEMENT ========== -->
-        <section class="mission">
-            <div class="ambient-orb"></div>
-            <div class="mission-line reveal"></div>
-            <p class="mission-quote blur-text reveal" data-blur-text>
-                We're not building another reminder app. We're connecting people who share the same fire — so no one
-                builds alone.
-            </p>
-        </section>
-
-        <!-- ========== APP SHOWCASE (SPLIT LAYOUT) ========== -->
-        <section class="app-showcase" id="showcase">
-            <div class="app-showcase-grid">
-                <div class="showcase-phone-wrap reveal">
-                    <div class="showcase-phone liquid-glass">
-                        <img src="screenshots/hero-phone.png" alt="SPACE App Home Screen">
+        <!-- ========== SECTION 1: IMPACT & NARRATIVE ========== -->
+        <section class="impact-section" id="impact">
+            <div class="impact-grid">
+                <!-- Left Image Card -->
+                <div class="impact-card impact-card-img reveal">
+                    <div class="impact-badge-icon">
+                        <svg viewBox="0 0 24 24" fill="white" stroke="none">
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        </svg>
+                    </div>
+                    <img src="screenshots/artisan-handloom.png" alt="Rural woman artisan working on handloom">
+                    <div class="impact-card-overlay">
+                        <span class="impact-small-label">Grassroots Reporting</span>
+                        <p class="impact-card-overlay-text">We go beyond the product. We bring the authentic village
+                            stories straight to your inbox.</p>
                     </div>
                 </div>
-                <div class="showcase-content reveal delay-1">
-                    <div class="section-label">The App</div>
-                    <h2 class="section-heading">Your habits,<br>your people,<br>your <em>SPACE.</em></h2>
-                    <p class="section-desc">SPACE isn't just about tracking — it's about finding the right people to
-                        grow with. Solo hustlers, couples, entire crews. Everyone gets their own space.</p>
 
-                    <div class="spec-grid">
-                        <div class="spec-card liquid-glass">
-                            <div class="spec-icon">🔥</div>
-                            <div class="spec-value">Streaks</div>
-                            <div class="spec-label">Solo + Combined</div>
-                        </div>
-                        <div class="spec-card liquid-glass">
-                            <div class="spec-icon">📸</div>
-                            <div class="spec-value">Snaps</div>
-                            <div class="spec-label">Daily Proof</div>
-                        </div>
-                        <div class="spec-card liquid-glass">
-                            <div class="spec-icon">👥</div>
-                            <div class="spec-value">3 Modes</div>
-                            <div class="spec-label">Solo · Duo · Crew</div>
-                        </div>
-                        <div class="spec-card liquid-glass">
-                            <div class="spec-icon">📍</div>
-                            <div class="spec-value">Discover</div>
-                            <div class="spec-label">Find Nearby</div>
-                        </div>
-                        <div class="spec-card liquid-glass">
-                            <div class="spec-icon">🏆</div>
-                            <div class="spec-value">Challenges</div>
-                            <div class="spec-label">Team Goals</div>
-                        </div>
-                        <div class="spec-card liquid-glass">
-                            <div class="spec-icon">👊</div>
-                            <div class="spec-value">Nudges</div>
-                            <div class="spec-label">Stay On Track</div>
-                        </div>
+                <!-- Center Stat -->
+                <div class="impact-card impact-card-stat reveal delay-1">
+                    <span class="stat-category">(Community)</span>
+                    <div class="impact-stat-value">12k+</div>
+                    <div class="stat-divider"></div>
+                    <p class="impact-stat-desc">Active Newsletter Subscribers. Join the movement of conscious readers
+                        supporting rural voices.</p>
+                    <div class="stat-avatars">
+                        <div class="stat-avatar-circle" style="background: #e2e8f0; z-index: 3;">👤</div>
+                        <div class="stat-avatar-circle" style="background: #cbd5e1; z-index: 2;">👤</div>
+                        <div class="stat-avatar-circle" style="background: #94a3b8; z-index: 1;">👤</div>
                     </div>
                 </div>
+
+                <!-- Right Image Card -->
+                <div class="impact-card impact-card-img reveal delay-2">
+                    <img src="screenshots/student-artisan.png" alt="Student storyteller with village artisan">
+                    <span class="est-badge">Est. 2024</span>
+                </div>
+            </div>
+
+            <div class="dashed-divider reveal delay-1"></div>
+
+            <!-- Main Text Block -->
+            <div class="impact-text reveal delay-2">
+                <h2 class="section-heading-split">
+                    <strong>Journalism meets economic empowerment,</strong>
+                    <span class="light-text">we don't just tell stories. Every article features a direct marketplace
+                        where you can buy authentic rural crafts with zero middlemen.</span>
+                </h2>
             </div>
         </section>
 
-        <!-- ========== FEATURES BENTO ========== -->
-        <section class="features-section" id="features">
-            <div class="ambient-orb"></div>
-            <div class="features-header reveal">
-                <div class="section-label centered">What Makes SPACE Different</div>
-                <h2 class="section-heading" style="text-align:center">Built for real<br><em>connection.</em></h2>
-                <p class="section-desc centered">Not another app you'll forget about. SPACE makes habits stick through
-                    real people, real proof, and real community.</p>
+        <!-- ========== ON GROUND PILLARS ========== -->
+        <section class="pillars-section" id="pillars">
+            <div class="pillars-header reveal">
+                <div class="section-label-clash">ON THE GROUND</div>
+                <h2 class="section-heading-clash" style="text-align:center">Core Action <em>Pillars.</em></h2>
+                <p class="section-desc-body">While our newsletter scales globally, we actively implement these key NGO
+                    pillars on the ground at scale.</p>
             </div>
 
-            <div class="bento-grid">
-                <div class="bento-card liquid-glass-strong reveal">
-                    <div class="bento-card-icon">📸</div>
-                    <div class="bento-card-title">Habit Snaps</div>
-                    <div class="bento-card-desc">Share daily photo proof with your crew. Snaps auto-expire at midnight —
-                        real accountability, not a highlight reel. React, cheer, keep it honest.</div>
+            <div class="pillars-grid">
+                <div class="pillar-card white-card reveal">
+                    <div class="pillar-num">01</div>
+                    <h3 class="pillar-title">Education & Digital Literacy</h3>
+                    <p class="pillar-desc">Access to education is the first step toward freedom. We offer basic literacy
+                        programs and support for schooling, ensuring women can confidently navigate the digital economy.
+                    </p>
                 </div>
-                <div class="bento-card liquid-glass-strong reveal delay-1">
-                    <div class="bento-card-icon">🔥</div>
-                    <div class="bento-card-title">Combined Streaks</div>
-                    <div class="bento-card-desc">Your solo streak plus your shared streak with your partner or crew.
-                        Miss a day together? Everyone feels it. That's what real accountability looks like.</div>
+                <div class="pillar-card white-card reveal delay-1">
+                    <div class="pillar-num">02</div>
+                    <h3 class="pillar-title">Financial Independence</h3>
+                    <p class="pillar-desc">True empowerment requires economic self-reliance. By connecting artisans
+                        directly to global buyers, we bypass traditional middlemen and ensure 100% of the revenue stays
+                        in the village.</p>
                 </div>
-                <div class="bento-card liquid-glass-strong reveal delay-2">
-                    <div class="bento-card-icon">📍</div>
-                    <div class="bento-card-title">Discover Nearby</div>
-                    <div class="bento-card-desc">Find real people near you building the same habits. Running crew a
-                        block away? Morning meditation group in your city? That's your tribe — go find them.</div>
-                </div>
-                <div class="bento-card liquid-glass-strong reveal delay-3">
-                    <div class="bento-card-icon">🏆</div>
-                    <div class="bento-card-title">Team Challenges</div>
-                    <div class="bento-card-desc">Create challenges your crew tackles together — finish as a team, earn
-                        milestones, climb leaderboards, and celebrate wins side by side.</div>
-                </div>
-                <div class="bento-card liquid-glass-strong reveal delay-4">
-                    <div class="bento-card-icon">👊</div>
-                    <div class="bento-card-title">Nudge System</div>
-                    <div class="bento-card-desc">Haven't heard from your crewmate? Send a nudge — a friendly poke to
-                        keep their streak alive. Accountability that actually reaches people.</div>
-                </div>
-                <div class="bento-card liquid-glass-strong reveal delay-5">
-                    <div class="bento-card-icon">📊</div>
-                    <div class="bento-card-title">Progress Calendar</div>
-                    <div class="bento-card-desc">See your entire journey at a glance. Monthly calendar views with
-                        completion rates, personal streaks, and long-term growth patterns that prove you showed up.
-                    </div>
+                <div class="pillar-card white-card reveal delay-2">
+                    <div class="pillar-num">03</div>
+                    <h3 class="pillar-title">Community Leadership</h3>
+                    <p class="pillar-desc">We foster solidarity networks among the women. By elevating local leaders, we
+                        create a sustainable ecosystem where women mentor and uplift each other within the rural
+                        clusters.</p>
                 </div>
             </div>
         </section>
 
-        <!-- ========== JOURNEY TIMELINE ========== -->
-        <section class="timeline-section" id="journey">
-            <div class="timeline-header reveal">
-                <div class="section-label centered">How It Works</div>
-                <h2 class="section-heading" style="text-align:center">Your journey<br>in four steps.</h2>
+        <!-- ========== SECTION 2: THE PIPELINE ========== -->
+        <section class="pipeline-section" id="pipeline">
+            <div class="pipeline-header reveal">
+                <div class="section-label-clash">HOW IT WORKS</div>
+                <h2 class="section-heading-clash" style="text-align:center">The Publication <em>Pipeline.</em></h2>
             </div>
 
-            <div class="timeline">
-                <div class="timeline-step reveal">
-                    <div class="timeline-node"></div>
-                    <div class="timeline-card liquid-glass">
-                        <div class="timeline-step-num">Step 01</div>
-                        <div class="timeline-step-title">Create Your SPACE</div>
-                        <div class="timeline-step-desc">Sign up in seconds. Set up your first habits — morning routines,
-                            workouts, reading, hydration — whatever matters to you. Your solo space is free, forever.
+            <div class="pipeline-grid">
+                <div class="pipeline-steps">
+                    <div class="pipeline-step reveal">
+                        <div class="pipeline-step-num">01</div>
+                        <div class="pipeline-step-content">
+                            <h3 class="pipeline-step-title">Grassroots Reporting</h3>
+                            <p class="pipeline-step-desc">Student journalists and local writers visit rural clusters to
+                                uncover authentic stories, document traditional art forms, and interview the women
+                                behind the craft.</p>
                         </div>
+                        <div class="pipeline-step-line"></div>
                     </div>
-                    <div style="flex:1"></div>
-                </div>
 
-                <div class="timeline-step reveal delay-1">
-                    <div class="timeline-node"></div>
-                    <div style="flex:1"></div>
-                    <div class="timeline-card liquid-glass">
-                        <div class="timeline-step-num">Step 02</div>
-                        <div class="timeline-step-title">Build Your Streak</div>
-                        <div class="timeline-step-desc">Check off habits daily. Watch your streak counter grow. Share
-                            snaps of your progress. The calendar fills up and your consistency becomes undeniable.</div>
-                    </div>
-                </div>
-
-                <div class="timeline-step reveal delay-2">
-                    <div class="timeline-node"></div>
-                    <div class="timeline-card liquid-glass">
-                        <div class="timeline-step-num">Step 03</div>
-                        <div class="timeline-step-title">Find Your Crew</div>
-                        <div class="timeline-step-desc">Invite your partner for a Couple Space or rally your squad for a
-                            Group Space. Combined streaks, shared challenges, and daily snaps keep everyone accountable.
+                    <div class="pipeline-step reveal delay-1">
+                        <div class="pipeline-step-num">02</div>
+                        <div class="pipeline-step-content">
+                            <h3 class="pipeline-step-title">The Newsletter Drop</h3>
+                            <p class="pipeline-step-desc">We curate and publish these narratives in our weekly
+                                newsletter, delivering powerful, deeply researched journalism directly to conscious
+                                readers.</p>
                         </div>
+                        <div class="pipeline-step-line"></div>
                     </div>
-                    <div style="flex:1"></div>
+
+                    <div class="pipeline-step reveal delay-2">
+                        <div class="pipeline-step-num">03</div>
+                        <div class="pipeline-step-content">
+                            <h3 class="pipeline-step-title">The Direct Marketplace</h3>
+                            <p class="pipeline-step-desc">Alongside every story, readers can instantly purchase the
+                                featured crafts directly from the artisan via WhatsApp. 100% of the sale goes to the
+                                woman.</p>
+                        </div>
+                        <div class="pipeline-step-line"></div>
+                    </div>
                 </div>
 
-                <div class="timeline-step reveal delay-3">
-                    <div class="timeline-node"></div>
-                    <div style="flex:1"></div>
-                    <div class="timeline-card liquid-glass">
-                        <div class="timeline-step-num">Step 04</div>
-                        <div class="timeline-step-title">Discover Your Tribe</div>
-                        <div class="timeline-step-desc">Open the Discover tab and find real communities near you —
-                            running crews, reading clubs, meditation groups. Your people are a block away. Go find your
-                            aura.</div>
+                <div class="pipeline-visual reveal delay-1">
+                    <div class="pipeline-visual-card white-card">
+                        <img src="screenshots/pottery-digital.png" alt="Heritage pottery meets digital interface">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ========== THREE MODES (BENTO DESTINATIONS) ========== -->
-        <section class="modes-section" id="modes">
-            <div class="modes-header reveal">
-                <div>
-                    <div class="section-label">Three Ways to Connect</div>
-                    <h2 class="section-heading">Your world.<br>Your <em>SPACE.</em></h2>
+        <!-- ========== SECTION 3: DATA GRID ========== -->
+        <section class="data-section" id="data">
+            <div class="data-grid">
+                <div class="data-card white-card reveal">
+                    <div class="data-value" data-count="12">12+</div>
+                    <div class="data-title">States Covered</div>
+                    <p class="data-desc">Reporting from micro-economies across India</p>
                 </div>
-                <a href="#pricing" class="modes-link">View Pricing →</a>
+                <div class="data-card white-card reveal delay-1">
+                    <div class="data-value" data-count="150">150+</div>
+                    <div class="data-title">Stories Published</div>
+                    <p class="data-desc">Authentic articles covering rural women</p>
+                </div>
+                <div class="data-card white-card reveal delay-2">
+                    <div class="data-value data-value-gradient">100%</div>
+                    <div class="data-title">Marketplace Yield</div>
+                    <p class="data-desc">Zero platform fees when you buy their crafts</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SECTION 4: FEATURED MICROBRANDS ========== -->
+        <section class="microbrands-section" id="microbrands">
+            <div class="microbrands-header reveal">
+                <div class="section-label-clash">LATEST EDITIONS</div>
+                <h2 class="section-heading-clash" style="text-align:center">This Week's <em>Stories.</em></h2>
             </div>
 
-            <div class="modes-grid">
-                <!-- SOLO — spans 2 cols -->
-                <div class="mode-card reveal">
-                    <div class="mode-card-bg">
-                        <img src="screenshots/solo-mode.png" alt="Solo Space">
+            <div class="microbrands-grid">
+                <!-- Card 1 -->
+                <div class="microbrand-card white-card reveal">
+                    <div class="microbrand-img">
+                        <img src="screenshots/indigo-blockprint.png" alt="Indigo Block-Print Fabrics">
+                        <span class="microbrand-tag">Newsletter</span>
                     </div>
-                    <div class="mode-card-gradient"></div>
-                    <div class="mode-card-content">
-                        <div class="mode-card-tag">Always Free</div>
-                        <div class="mode-card-title">Solo SPACE</div>
-                        <div class="mode-card-desc">Your personal habit universe. Stack habits, build streaks, track
-                            progress on a calendar. Prove to yourself you've got this — all free, forever.</div>
-                        <a href="#subscribe-form" class="mode-card-btn">Get Early Access →</a>
-                    </div>
-                </div>
-
-                <!-- COUPLE -->
-                <div class="mode-card reveal delay-1">
-                    <div class="mode-card-bg">
-                        <img src="screenshots/couple-mode.png" alt="Couple Space"
-                            onerror="this.parentElement.style.background='linear-gradient(135deg, rgba(236,72,153,0.2), rgba(139,92,246,0.1))';">
-                    </div>
-                    <div class="mode-card-gradient"></div>
-                    <div class="mode-card-content">
-                        <div class="mode-card-tag" style="color:var(--accent-2)">Pro</div>
-                        <div class="mode-card-title">Couple SPACE</div>
-                        <div class="mode-card-desc">Build habits with your person. Shared streaks, daily snaps, nudges.
-                            It's giving power couple.</div>
-                        <a href="#pricing" class="mode-card-btn">Learn More →</a>
+                    <div class="microbrand-info">
+                        <h3 class="microbrand-name">The Kutch Imprints: A Story of Indigo</h3>
+                        <p class="microbrand-lead">Read the journey of Radha Devi & 14 women artisans mastering the
+                            block-print.</p>
+                        <div class="microbrand-rating">
+                            <span class="rating-star">🛒</span>
+                            <span class="rating-text" style="font-weight:600; color:var(--green);">Read Story & Shop
+                                Handloom</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- GROUP — spans 2 cols -->
-                <div class="mode-card reveal delay-2">
-                    <div class="mode-card-bg">
-                        <img src="screenshots/group-mode.png" alt="Group Space">
+                <!-- Card 2 -->
+                <div class="microbrand-card white-card reveal delay-1">
+                    <div class="microbrand-img">
+                        <img src="screenshots/terracotta-pottery.png" alt="Natural Terracotta Pottery">
+                        <span class="microbrand-tag">Newsletter</span>
                     </div>
-                    <div class="mode-card-gradient"></div>
-                    <div class="mode-card-content">
-                        <div class="mode-card-tag" style="color:var(--accent-3)">Pro</div>
-                        <div class="mode-card-title">Crew SPACE</div>
-                        <div class="mode-card-desc">Rally your crew. Group streaks, team challenges, leaderboards, and
-                            snaps. Find your people on Discover.</div>
-                        <a href="#pricing" class="mode-card-btn">Learn More →</a>
+                    <div class="microbrand-info">
+                        <h3 class="microbrand-name">Clay Heritage: The Mothers of Nizamabad</h3>
+                        <p class="microbrand-lead">How a village collective is reviving traditional earth-baked ware for
+                            the modern home.</p>
+                        <div class="microbrand-rating">
+                            <span class="rating-star">🛒</span>
+                            <span class="rating-text" style="font-weight:600; color:var(--green);">Read Story & Shop
+                                Pottery</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- DISCOVER — spans 2 cols -->
-                <div class="mode-card reveal delay-3">
-                    <div class="mode-card-bg">
-                        <img src="screenshots/discover-screen.png" alt="Discover">
+                <!-- Card 3 -->
+                <div class="microbrand-card white-card reveal delay-2">
+                    <div class="microbrand-img">
+                        <img src="screenshots/sikki-baskets.png" alt="Hand-woven Grass Baskets">
+                        <span class="microbrand-tag">Newsletter</span>
                     </div>
-                    <div class="mode-card-gradient"></div>
-                    <div class="mode-card-content">
-                        <div class="mode-card-tag" style="color:var(--gold)">Explore</div>
-                        <div class="mode-card-title">Discover Tab</div>
-                        <div class="mode-card-desc">Find trending habit groups, active spaces, and real people near you
-                            building the same habits. Your tribe is right around the corner.</div>
-                        <a href="#subscribe-form" class="mode-card-btn">Subscribe to Join →</a>
+                    <div class="microbrand-info">
+                        <h3 class="microbrand-name">Sikki Grass: Ancient Weaving Revived</h3>
+                        <p class="microbrand-lead">Discover the eco-friendly craft kept alive by the Madhubani rural
+                            collective.</p>
+                        <div class="microbrand-rating">
+                            <span class="rating-star">🛒</span>
+                            <span class="rating-text" style="font-weight:600; color:var(--green);">Read Story & Shop
+                                Baskets</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SECTION 5: ARTISAN LEGACY GALLERY ========== -->
+        <section class="legacy-section" id="legacy">
+            <div class="legacy-header reveal">
+                <div class="section-label-clash">VISUAL GALLERY</div>
+                <h2 class="section-heading-clash" style="text-align:center">The Faces of <em>HerRise.</em></h2>
+            </div>
+
+            <div class="legacy-mosaic">
+                <div class="mosaic-item mosaic-tall reveal">
+                    <img src="screenshots/artisan-handloom.png" alt="Hands mixing organic spices">
+                    <div class="mosaic-overlay">
+                        <span>Heritage in every thread</span>
+                    </div>
+                </div>
+                <div class="mosaic-item reveal delay-1">
+                    <img src="screenshots/student-artisan.png" alt="Student and artisan collaboration">
+                    <div class="mosaic-overlay">
+                        <span>Journalists meeting artisans</span>
+                    </div>
+                </div>
+                <div class="mosaic-item reveal delay-2">
+                    <img src="screenshots/pottery-digital.png" alt="Heritage jewelry on modern display">
+                    <div class="mosaic-overlay">
+                        <span>Tradition meets technology</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Banner -->
+            <div class="legacy-banner reveal">
+                <div class="legacy-banner-content">
+                    <h3 class="legacy-banner-heading">Get weekly stories from the heart of rural India.</h3>
+                    <p class="legacy-banner-desc">Read the journalism. Support the marketplace. Drive the economy.</p>
+                    <div class="legacy-banner-actions">
+                        <a href="#subscribe-form" class="hr-cta-btn">Subscribe Free
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#subscribe-form" class="hr-cta-btn hr-cta-btn-outline">Shop Marketplace
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -425,181 +444,89 @@
         <!-- ========== FAQ ========== -->
         <section class="faq-section" id="faq">
             <div class="faq-header reveal">
-                <div class="section-label centered">Common Questions</div>
-                <h2 class="section-heading" style="text-align:center">Everything you<br>need to know.</h2>
+                <div class="section-label-clash">QUESTIONS</div>
+                <h2 class="section-heading-clash" style="text-align:center">Everything you need to <em>know.</em></h2>
             </div>
 
             <div class="faq-list">
-                <div class="faq-item liquid-glass reveal">
+                <div class="faq-item white-card reveal">
                     <button class="faq-question" aria-expanded="false">
-                        Is SPACE really free?
+                        What exactly is HerRise?
                         <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="6 9 12 15 18 9" />
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">Yes! Solo Space is completely free — forever. You get unlimited
-                            personal habits, daily streak tracking, a progress calendar, custom emojis, and access to
-                            browse the Discover tab. No credit card, no trial, no catch. Upgrade to Pro only when you
-                            want Couple Spaces, Group Spaces, and the full social features.</div>
+                        <div class="faq-answer-inner">HerRise is a digital publication and newsletter dedicated to
+                            sharing the untold stories of rural Indian women artisans. But we go beyond journalism —
+                            alongside every story, we provide a direct marketplace for readers to purchase the crafts
+                            featured in the article, bypassing traditional middlemen entirely.</div>
                     </div>
                 </div>
 
-                <div class="faq-item liquid-glass reveal delay-1">
+                <div class="faq-item white-card reveal delay-1">
                     <button class="faq-question" aria-expanded="false">
-                        What's the Discover tab?
+                        How does the marketplace work?
                         <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="6 9 12 15 18 9" />
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">Discover is SPACE's community radar. It shows you real habit
-                            groups, active spaces, and people near your location who are building the same habits.
-                            Filter by category, distance, or what's trending. See a running crew nearby? A meditation
-                            group in your neighborhood? Send a join request and find your tribe.</div>
-                    </div>
-                </div>
-
-                <div class="faq-item liquid-glass reveal delay-2">
-                    <button class="faq-question" aria-expanded="false">
-                        How are habit snaps different from stories?
-                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9" />
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">Habit snaps are photo proof that you actually did the thing.
-                            They're only shared within your Couple or Group Space — not public. They auto-expire at
-                            midnight IST every day, so there's no pressure to look perfect. Your crew can react and
-                            cheer you on. It's accountability, not a highlight reel.</div>
-                    </div>
-                </div>
-
-                <div class="faq-item liquid-glass reveal delay-3">
-                    <button class="faq-question" aria-expanded="false">
-                        What makes SPACE different from other habit apps?
-                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9" />
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">Most habit apps are solo. SPACE is built for connection. You can
-                            track habits alone, but the real magic happens when you bring your people — couples sharing
-                            growth, friend groups pushing each other, or strangers nearby who share your fire. Combined
-                            streaks, daily snaps, nudges, and Discover make habits social in a way that actually works.
+                        <div class="faq-answer-inner">When you read an article in our newsletter, you'll see a link to
+                            buy the artisan's products directly. This connects you straight to their WhatsApp or digital
+                            portfolio. 100% of the sale goes directly to the woman. HerRise takes zero platform fees.
                         </div>
                     </div>
                 </div>
 
-                <div class="faq-item liquid-glass reveal delay-4">
+                <div class="faq-item white-card reveal delay-2">
                     <button class="faq-question" aria-expanded="false">
-                        Is my data private?
+                        How do you gather these stories?
                         <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="6 9 12 15 18 9" />
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">Absolutely. Your habits are yours. Snaps are only visible within
-                            your spaces and auto-delete daily. Your location is only used for Discover recommendations
-                            and can be disabled anytime. We don't sell data, run ads, or use third-party analytics. Read
-                            our full <a href="privacy.html"
-                                style="color:var(--accent);text-decoration:underline;">Privacy Policy</a> for details.
-                        </div>
+                        <div class="faq-answer-inner">We partner with college student journalists and local writers who
+                            visit rural clusters. They map the micro-economies, document the art forms, and interview
+                            the women to ensure every narrative is authentic and rooted in truth.</div>
                     </div>
                 </div>
 
-                <div class="faq-item liquid-glass reveal delay-5">
+                <div class="faq-item white-card reveal delay-3">
                     <button class="faq-question" aria-expanded="false">
-                        What platforms will SPACE be available on?
+                        Is the newsletter free?
                         <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="6 9 12 15 18 9" />
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">SPACE is currently in development and will be launching soon on
-                            Android and iOS. Subscribe to our early access list below to secure up to a 1-year free
-                            premium
-                            trial!</div>
+                        <div class="faq-answer-inner">Yes! Our daily/weekly newsletter is completely free to read. We
+                            believe in economic solidarity, not charity. By subscribing and sharing their stories, you
+                            amplify their reach to conscious consumers. And if you choose to buy, you're directly
+                            supporting their craft.</div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- ========== PRICING ========== -->
-        <section class="pricing-section" id="pricing">
-            <div class="pricing-header reveal">
-                <div class="section-label centered">Simple Pricing</div>
-                <h2 class="section-heading" style="text-align:center">Start free.<br>Level up <em>together.</em></h2>
-                <p class="section-desc centered">Solo habit tracking is free forever. Upgrade when you're ready to share
-                    the journey with your people.</p>
-            </div>
-
-            <div class="pricing-grid">
-                <div class="price-card liquid-glass reveal">
-                    <div class="price-name">Solo</div>
-                    <div class="price-amount"><sup>₹</sup>0<span class="period"> / forever</span></div>
-                    <div class="price-period">Always Free · No Card Needed</div>
-                    <ul class="price-list">
-                        <li><span class="check-icon ci-green">✓</span>Unlimited personal habits</li>
-                        <li><span class="check-icon ci-green">✓</span>Daily streak tracking</li>
-                        <li><span class="check-icon ci-green">✓</span>Progress calendar & stats</li>
-                        <li><span class="check-icon ci-green">✓</span>Custom emojis & schedules</li>
-                        <li><span class="check-icon ci-green">✓</span>Browse the Discover tab</li>
-                    </ul>
-                    <a href="#subscribe-form" class="btn btn-outline" style="width:100%;justify-content:center;">Join
-                        Waitlist →</a>
+                <div class="faq-item white-card reveal delay-4">
+                    <button class="faq-question" aria-expanded="false">
+                        How is this different from existing craft marketplaces?
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">We are a publication first. We focus on the woman and her story
+                            before the product. Traditional platforms act as middlemen, taking 15-40% commissions. We
+                            just provide the journalistic storytelling and the direct marketplace infrastructure — then
+                            step back so she keeps 100% of the value.</div>
+                    </div>
                 </div>
-
-                <div class="price-card pro liquid-glass-strong reveal delay-1">
-                    <div class="price-badge">✦ SPACE Pro</div>
-                    <div class="price-name">Pro</div>
-                    <div class="price-amount"><sup>₹</sup>0<span class="period"
-                            style="text-decoration:line-through;margin-right:4px;">₹TBD</span><span class="period"> /
-                            Trial</span></div>
-                    <div class="price-period" style="color:var(--gold);font-weight:600;">For first 2,000 Early
-                        Registers!</div>
-                    <ul class="price-list">
-                        <li><span class="check-icon ci-purple">✓</span>Everything in Solo</li>
-                        <li><span class="check-icon ci-purple">✓</span>Couple Space — private shared tracking</li>
-                        <li><span class="check-icon ci-purple">✓</span>Group Space — crew-level accountability</li>
-                        <li><span class="check-icon ci-purple">✓</span>Combined & partner streaks</li>
-                        <li><span class="check-icon ci-purple">✓</span>Daily habit snaps & reactions</li>
-                        <li><span class="check-icon ci-purple">✓</span>Team challenges & leaderboards</li>
-                        <li><span class="check-icon ci-purple">✓</span>Nudge system</li>
-                        <li><span class="check-icon ci-purple">✓</span>Full Discover — join & connect</li>
-                    </ul>
-                    <a href="#subscribe-form" class="btn btn-primary" style="width:100%;justify-content:center;">Claim
-                        Early Access Trial →</a>
-                </div>
-            </div>
-            <p class="pricing-note">Claim up to a 1-year free trial by subscribing to the early access list below. No
-                credit card required to secure your spot.</p>
-        </section>
-
-        <!-- ========== CTA ========== -->
-        <section class="cta-section">
-            <div class="ambient-orb"></div>
-            <div class="reveal">
-                <h2 class="cta-heading">Your tribe is<br>waiting for you.</h2>
-                <p class="cta-desc">Join thousands finding their people and building real habits — solo, with their
-                    partner, or with their crew. Get up to 1 year free premium membership if you're among the first 2k
-                    to
-                    subscribe.</p>
-                <a href="#subscribe-form" class="btn btn-primary liquid-glass-strong"
-                    style="font-size:17px;padding:18px 44px;">
-                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
-                    </svg>
-                    Subscribe for Early Access
-                </a>
             </div>
         </section>
 
@@ -609,26 +536,25 @@
     <footer>
         <div class="footer-grid">
             <div>
-                <a href="#" class="footer-logo">SPACE</a>
-                <h3 class="footer-heading">The universe is calling.</h3>
+                <a href="#" class="footer-logo">HerRise</a>
+                <h3 class="footer-heading">Reporting from the heart of rural India.</h3>
                 <div class="footer-email-wrap" style="flex-direction: column; align-items: flex-start;">
                     <form id="subscribe-form" style="display: flex; width: 100%; gap: 8px;">
-                        <input type="email" id="subscriber-email" class="footer-email liquid-glass"
-                            placeholder="your@email.com" required aria-label="Email" style="margin-bottom: 0;">
+                        <input type="email" id="subscriber-email" class="footer-email" placeholder="your@email.com"
+                            required aria-label="Email" style="margin-bottom: 0;">
                         <button type="submit" class="footer-subscribe" id="subscribe-btn">Subscribe</button>
                     </form>
-                    <div id="subscribe-msg"
-                        style="display: none; font-size: 13px; color: var(--accent-3); margin-top: 12px;">✅ Subscribed
-                        successfully!</div>
+                    <div id="subscribe-msg" style="display: none; font-size: 13px; color: #00C950; margin-top: 12px;">✅
+                        Subscribed successfully!</div>
                 </div>
             </div>
             <div class="footer-col">
-                <h5>Product</h5>
+                <h5>Platform</h5>
                 <ul>
-                    <li><a href="#showcase">How It Works</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#modes">Modes</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#impact">Our Mission</a></li>
+                    <li><a href="#pipeline">How We Report</a></li>
+                    <li><a href="#microbrands">Latest Editions</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -637,18 +563,19 @@
                     <li><a href="terms.html">Terms of Service</a></li>
                     <li><a href="privacy.html">Privacy Policy</a></li>
                     <li><a href="mailto:shiva547337@gmail.com">Contact Us</a></li>
+                    <li><a href="#subscribe-form">Journalist Application</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h5>Early Access</h5>
+                <h5>Community</h5>
                 <ul>
-                    <li><a href="#subscribe-form">Subscribe Now</a></li>
-                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#subscribe-form">Subscribe Free</a></li>
+                    <li><a href="#microbrands">Shop Marketplace</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <span class="footer-copy">© 2025 SPACE App. All rights reserved.</span>
+            <span class="footer-copy">© 2025 HerRise. All rights reserved.</span>
             <div class="footer-links">
                 <a href="terms.html">Terms</a>
                 <a href="privacy.html">Privacy</a>
